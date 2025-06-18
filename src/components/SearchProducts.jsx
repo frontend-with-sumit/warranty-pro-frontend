@@ -1,14 +1,8 @@
-import {
-	createListCollection,
-	HStack,
-	Input,
-	InputGroup,
-	VStack,
-} from '@chakra-ui/react';
-import { TbSearch } from 'react-icons/tb';
-import Dropdown from './shared/Dropdown';
-import { CATEGORY, STATUS } from '../utils/filters';
+import { createListCollection, HStack, VStack } from '@chakra-ui/react';
 import { useState } from 'react';
+import { CATEGORY, STATUS } from '../utils/filters';
+import SearchInput from './SearchInput';
+import Dropdown from './shared/Dropdown';
 
 const CATEGORIES = createListCollection({
 	items: CATEGORY,
@@ -34,30 +28,18 @@ const SearchProducts = () => {
 		<VStack
 			alignItems="initial"
 			spaceY={2}
-			className="shadow-sm!"
 			padding={6}
 			borderRadius="4xl"
 			border="1px solid"
 			borderColor="gray.200"
+			className="shadow-sm!"
 		>
-			<InputGroup
-				bg="gray.50"
-				startElement={<TbSearch size={30} className="text-gray-400!" />}
-				padding={3}
-				borderRadius="full"
-			>
-				<Input
-					name="search"
-					marginLeft={5}
-					border="none"
-					placeholder="Search your produicts"
-					fontSize="lg"
-					_focusVisible={{ outline: 'none' }}
-					autoComplete="off"
-					value={searchTerm}
-					onChange={handleChange}
-				/>
-			</InputGroup>
+			<SearchInput
+				value={searchTerm}
+				placeholder="Search your products"
+				name="search"
+				onChange={handleChange}
+			/>
 			<HStack>
 				<Dropdown
 					placeholder="All Categories"
