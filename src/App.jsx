@@ -1,13 +1,17 @@
-import { Box, Container, Heading, Text, VStack } from '@chakra-ui/react';
+import { Container } from '@chakra-ui/react';
 import './App.css';
-import TitleWithLogo from './components/TitleWithLogo';
 import Header from './components/Header';
-import FloatingMenu from './components/FloatingMenu';
+import SearchProducts from './components/SearchProducts';
 
 function App() {
 	return (
-		<Container paddingInline={{ base: '1rem', md: '1.8rem' }} paddingBlock={6}>
+		<Container
+			paddingInline={{ base: '1rem', md: '1.8rem' }}
+			paddingBlock={6}
+			spaceY={10}
+		>
 			<Header />
+			<SearchProducts />
 		</Container>
 	);
 }
