@@ -4,7 +4,7 @@ import { PiShieldStarBold } from 'react-icons/pi';
 
 const TitleWithLogo = () => {
 	return (
-		<HStack spaceX={5} justifyContent="center">
+		<HStack spaceX={3} justifyContent="center">
 			<Box border="1px solid" borderRadius="xl" width="fit-content" padding={3}>
 				<PiShieldStarBold size={40} />
 			</Box>
