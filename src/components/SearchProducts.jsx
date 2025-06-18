@@ -15,8 +15,8 @@ const STATUSES = createListCollection({
 const SearchProducts = () => {
 	const [searchTerm, setSearchTerm] = useState('');
 	const [filters, setFilters] = useState({
-		category: '',
-		status: '',
+		category: [],
+		status: [],
 	});
 
 	const handleChange = (evt) => setSearchTerm(evt.target.value);
