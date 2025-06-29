@@ -1,14 +1,12 @@
-import { Heading, Text } from '@chakra-ui/react';
+import { Box } from '@chakra-ui/react';
 import './App.css';
+import Dashboard from './pages/dashboard';
 
 function App() {
 	return (
-		<>
-			<Heading as="h1" fontWeight={900}>
-				Warranty Pro
-			</Heading>
-			<Text>This is a test for warranty pro font</Text>
-		</>
+		<Box>
+			<Dashboard />
+		</Box>
 	);
 }
 
