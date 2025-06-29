@@ -1,3 +1,4 @@
+import Copyright from '../components/Copyright';
 import Navigation from '../components/Navigation';
 import Logo from '../components/shared/Logo';
 import { Box, Container, Flex } from '@chakra-ui/react';
@@ -32,7 +33,7 @@ const MainLayout = ({ children }) => {
 			{/* Main Content */}
 			<Box as="main">
 				<Container
-					minH="80dvh"
+					minH="83dvh"
 					maxWidth="8xl"
 					width="100%"
 					position="relative"
@@ -49,10 +50,9 @@ const MainLayout = ({ children }) => {
 				justifyContent="center"
 				alignItems="center"
 				width="100%"
-				minHeight="64px"
+				minHeight="50px"
 				className="bg-white"
-				paddingTop={4}
-				paddingBottom={2}
+				paddingBlock={2}
 				marginTop={2}
 				borderTop="1px solid"
 				borderColor="gray.200"
@@ -64,7 +64,7 @@ const MainLayout = ({ children }) => {
 					maxWidth="8xl"
 					textAlign="center"
 				>
-					{/* Footer content goes here */}
+					<Copyright />
 				</Container>
 			</Flex>
 		</Box>
