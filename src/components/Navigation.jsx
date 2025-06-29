@@ -5,7 +5,7 @@ import avatar from '../assets/images/avatar.jpg';
 
 const Navigation = () => {
 	return (
-		<HStack spaceX={5} alignItems="center">
+		<HStack as="nav" spaceX={5} alignItems="center">
 			<Box
 				_hover={{ background: 'gray.100' }}
 				transition="background 0.2s ease-in"

@@ -8,7 +8,6 @@ const MainLayout = ({ children }) => {
 		<Box className="bg-gradient-to-br from-blue-50 via-white to-purple-50">
 			{/* Navbar */}
 			<Flex
-				as="header"
 				justifyContent="center"
 				alignItems="center"
 				width="100%"
