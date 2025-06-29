@@ -17,7 +17,6 @@ import {
 const RenderStat = ({ label, value, color = 'blue', icon }) => {
 	return (
 		<HStack
-			marginTop={6}
 			justifyContent="space-between"
 			bgGradient="to-br"
 			gradientFrom={`${color}.50`}
